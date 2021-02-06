@@ -115,6 +115,7 @@ h6 {
 }
 
 .main .main__content__link {
+  border: 4px dashed #333;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -163,7 +164,12 @@ h6 {
   transition: 2s;
 }
 
-.main .main__content__link a i {
+.main .main__content__link .link__text a {
+  width: 100%;
+  height: 100%;
+}
+
+.main .main__content__link .link__text a i {
   font-size: 35px;
   color: #204969;
   margin-bottom: 8px;
