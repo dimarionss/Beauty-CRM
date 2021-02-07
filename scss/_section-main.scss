@@ -3,8 +3,10 @@
   .top__block {
     // background-color: rgb(255, 138, 115);
     background: linear-gradient(-119deg, rgb(138, 198, 209), #ffb549, rgb(255, 138, 115));
-    background-size: 400% 400%;
+    background-size: 500% 400%;
     animation: AnimationName 10s ease infinite;
+    border-bottom: 4px solid #333;
+
 
 
     @-webkit-keyframes AnimationName {
@@ -71,7 +73,7 @@
     // background-color: rgb(138, 198, 209);
 
     background: linear-gradient(219deg, rgb(255, 138, 115), rgb(138, 198, 209), #ffb549);
-    background-size: 400% 400%;
+    background-size: 400% 300%;
     animation: AnimationName 10s ease infinite;
 
 
