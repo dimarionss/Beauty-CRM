@@ -92,29 +92,81 @@ h6 {
 /*=================================Header====================================*/
 /*=================================Header end====================================*/
 /*=================================Main Section====================================*/
-.main {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(47%, #8ac6d1), color-stop(6%, #fff9ed), color-stop(53%, #fff9ed), color-stop(50%, #ff8a73));
-  background: -webkit-linear-gradient(bottom, #8ac6d1 47%, #fff9ed 6%, #fff9ed 53%, #ff8a73 50%);
-  background: -o-linear-gradient(bottom, #8ac6d1 47%, #fff9ed 6%, #fff9ed 53%, #ff8a73 50%);
-  background: linear-gradient(to top, #8ac6d1 47%, #fff9ed 6%, #fff9ed 53%, #ff8a73 50%);
+.main .top__block {
+  background: -webkit-linear-gradient(209deg, #8ac6d1, #ffb549, #ff8a73);
+  background: -o-linear-gradient(209deg, #8ac6d1, #ffb549, #ff8a73);
+  background: linear-gradient(-119deg, #8ac6d1, #ffb549, #ff8a73);
+  -webkit-background-size: 400% 400%;
+          background-size: 400% 400%;
+  -webkit-animation: AnimationName 10s ease infinite;
+          animation: AnimationName 10s ease infinite;
 }
 
-.main .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 81%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 81%;
+  }
 }
 
-.main .main__content__link {
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 81%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 81%;
+  }
+}
+
+.main .bottom__block {
+  background: -webkit-linear-gradient(231deg, #ff8a73, #8ac6d1, #ffb549);
+  background: -o-linear-gradient(231deg, #ff8a73, #8ac6d1, #ffb549);
+  background: linear-gradient(219deg, #ff8a73, #8ac6d1, #ffb549);
+  -webkit-background-size: 400% 400%;
+          background-size: 400% 400%;
+  -webkit-animation: AnimationName 10s ease infinite;
+          animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 81%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 81%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 81%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 81%;
+  }
+}
+
+.main .main__content__block {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.main .main__content__block .main__content__link {
   border: 4px dashed #333;
   position: absolute;
   left: 50%;
@@ -130,7 +182,7 @@ h6 {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.main .main__content__link:hover {
+.main .main__content__block .main__content__link:hover {
   -webkit-border-radius: 10%;
           border-radius: 10%;
   -webkit-transition: 2s;
@@ -138,21 +190,21 @@ h6 {
   transition: 2s;
 }
 
-.main .main__content__link:hover h3 {
+.main .main__content__block .main__content__link:hover h3 {
   color: #fff;
   -webkit-transition: 2s;
   -o-transition: 2s;
   transition: 2s;
 }
 
-.main .main__content__link:hover a i {
+.main .main__content__block .main__content__link:hover a i {
   color: #fff;
   -webkit-transition: 2s;
   -o-transition: 2s;
   transition: 2s;
 }
 
-.main .main__content__link .link__text {
+.main .main__content__block .main__content__link .link__text {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -169,7 +221,7 @@ h6 {
           justify-content: center;
 }
 
-.main .main__content__link .link__text a {
+.main .main__content__block .main__content__link .link__text a {
   width: 100%;
   height: 100%;
   -webkit-box-orient: vertical;
@@ -187,19 +239,19 @@ h6 {
           justify-content: center;
 }
 
-.main .main__content__link .link__text a i {
+.main .main__content__block .main__content__link .link__text a i {
   font-size: 35px;
   color: #204969;
   margin-bottom: 8px;
 }
 
-.main .top__link {
-  top: 23%;
+.main .main__content__block .top__link {
+  top: 50%;
   background-color: #8ac6d1;
 }
 
-.main .bottom__link {
-  top: 77%;
+.main .main__content__block .bottom__link {
+  top: 50%;
   background-color: #ffb549;
 }
 
