@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <title>Авторизация</title>
+  <title>BeautyCRM Главная</title>
 </head>
 
 <body>
@@ -14,39 +14,20 @@
       <h3 style="color: azure; text-align: center;">Beauty CRM</h3>
     </div>
   </header>
-  <section class="login">
+  <section class="main">
     <div class="container">
-      <div class="wrap --rtn">
-
-        <div class="wram__block">
-          <div class="form__block">
-            <form action="" method="" class="flex-form">
-              <ul class="select__list">
-                <li id="js-usr-new" class="select__label">Sign up</li>
-                <li id="js-usr-rtn" class="select__label select__label--active">Sign in</li>
-                <li id="js-usr-rst" class="select__label">Reset</li>
-              </ul>
-              <span class="pointer"></span>
-              <input type="email" placeholder="Email" class="ui-elem ui-elem-email" />
-              <input type="password" placeholder="Password" class="ui-elem ui-elem-pass" />
-              <input type="password" placeholder="Repeat Password" class="ui-elem ui-elem-rpass --rtn" />
-              <div class="social__block">
-                <div class="socialicon">
-                  <div class="facebookcolor socialiconcircle1"></div>
-                  <div class="socialiconcircle2"><a href="#">
-                      <i class="fa icons fa-facebook-square facebook"></i></a>
-                  </div>
-                </div>
-                <div class="socialicon">
-                  <div class="googlecolor socialiconcircle1"></div>
-                  <div class="socialiconcircle2"><a href="#">
-                      <i class="fa icons fa-google-plus-square google"></i></a>
-                  </div>
-                </div>
-              </div>
-              <button id="js-btn" class="ui-button">Sign In</button>
-            </form>
-          </div>
+      <div class="main__content__block top__block">
+        <div class="main__content__link top__link">
+          <div class="link__text"><a href="login.html"><i class="fa fa-address-card"></i>
+              <h3 class="main__link__text">Client</h3>
+            </a></div>
+        </div>
+      </div>
+      <div class="main__content__block bottom__block">
+        <div class="main__content__link bottom__link">
+          <div class="link__text"><a href="login.html"><i class="fa fa-address-card"></i>
+              <h3 class="main__link__text">Master</h3>
+            </a></div>
         </div>
       </div>
     </div>
@@ -58,7 +39,6 @@
   </footer>
   <script src="https://use.fontawesome.com/23fd1229eb.js"></script>
   <script src="js/JQuery.min.js"></script>
-  <script src="js/login.js"></script>
   <script src="js/custom.js"></script>
 </body>
 
