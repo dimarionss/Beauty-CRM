@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Клиент</title>
+</head>
+
+<body>
+  <header>
+    <div class="" style="background: #333; width: 100%; height: 50px;">
+      <h3 style="color: azure; text-align: center;">Beauty CRM</h3>
+    </div>
+  </header>
+  <section class="main">
+    <div class="container">
+      <div class="form__client__block">
+        <div class="form-wrap">
+          <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+            <h1>Регистрация</h1>
+          </div>
+          <form method="post" action="form.php">
+            <div>
+              <label for="name">Имя</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="radio">
+              <span>Пол</span>
+              <label>
+                <input type="radio" name="sex" value="мужской">мужской
+                <div class="radio-control male"></div>
+              </label>
+              <label>
+                <input type="radio" name="sex" value="женский">женский
+                <div class="radio-control female"></div>
+              </label>
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" required>
+            </div>
+            <div>
+              <label for="country">Страна</label>
+              <select name="country">
+                <option>Выберите страну проживания</option>
+                <option value="Россия">Россия</option>
+                <option value="Украина">Украина</option>
+                <option value="Беларусь">Беларусь</option>
+              </select>
+              <div class="select-arrow"></div>
+            </div>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="" style="background: #333; width: 100%; height: 50px;">
+      <h3 style="color: azure; text-align: center;">Beauty CRM</h3>
+    </div>
+  </footer>
+  <script src="https://use.fontawesome.com/23fd1229eb.js"></script>
+  <script src="js/JQuery.min.js"></script>
+  <script src="js/login-forms.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

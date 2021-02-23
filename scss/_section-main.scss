@@ -1,55 +1,10 @@
 /*=================================Main Section====================================*/
 .main {
   .top__block {
-    // background-color: rgb(255, 138, 115);
     background: linear-gradient(-119deg, rgb(138, 198, 209), #ffb549, rgb(255, 138, 115));
     background-size: 500% 400%;
     animation: AnimationName 10s ease infinite;
     border-bottom: 4px solid #333;
-
-
-
-    @-webkit-keyframes AnimationName {
-      0% {
-        background-position: 0% 81%
-      }
-
-      50% {
-        background-position: 100% 20%
-      }
-
-      100% {
-        background-position: 0% 81%
-      }
-    }
-
-    @-moz-keyframes AnimationName {
-      0% {
-        background-position: 0% 81%
-      }
-
-      50% {
-        background-position: 100% 20%
-      }
-
-      100% {
-        background-position: 0% 81%
-      }
-    }
-
-    @-o-keyframes AnimationName {
-      0% {
-        background-position: 0% 81%
-      }
-
-      50% {
-        background-position: 100% 20%
-      }
-
-      100% {
-        background-position: 0% 81%
-      }
-    }
 
     @keyframes AnimationName {
       0% {

@@ -1,11 +1,17 @@
 $main_color: #fae3d9;
 $second_color: #bbded6;
 $text_color:#204969;
+$colourNew: rgb(138, 198, 209);
+$colourRst: #ffb549;
+$colourRtn: rgb(255, 138, 115);
+$black: $text_color;
+$white: #fff;
 @import "_nullstyle";
 @import "_header";
 @import "_section-main";
 @import "_main";
 @import "_button";
 @import "_login";
+@import "_login_client";
 @import "_hamburger";
 @import "_media";
